@@ -1,0 +1,41 @@
+<!-- <div>
+    <app-department [abc]="totalDepartment" (firemessgae)="DisplayData($event)" (promptvalue)="Showprompt($event)">
+
+    </app-department>
+    <p>
+        {{Comingdata}}
+    </p>
+     <button class="btn btn-primary" (click)="displayTime()">Click</button> 
+
+</div> -->
+{{serviceCatch}}
+<table>
+    <tr>
+        <td>Name</td>
+        <td>{{name}}</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>{{age}}</td>
+    </tr>
+    <tr *ngIf="showDetails">
+        <td>Designation</td>
+        <td>{{profile}}</td>
+    </tr>
+    <tr *ngIf="showDetails">
+    <td>Current employement</td>
+    <td>{{company}}</td>
+    </tr>
+    <button class="btn btn-primary" [hidden]="showDetails" (click)="toggaleValue()">Show details</button>
+    <button class="btn btn-primary" [hidden]="!showDetails" (click)="toggaleValue()">Hide details</button>
+
+</table>
+
+
+<table>
+    <th>Index</th><th>Name</th><th>Age</th>
+    <tr (click)=onclickChange(sep) *ngFor="let sep of totalDepartment">
+        <td>{{sep.id}}</td>
+        <td>{{sep.name}}</td>
+    </tr>
+</table>

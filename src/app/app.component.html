@@ -1,0 +1,82 @@
+<!-- <div class="container">
+    <app-home></app-home>
+</div> -->
+
+<div >
+    <!-- <h1>Employees Details</h1>
+   <p>
+    
+           {{alertUser()}} 
+       
+      <img src= "{{url}}">
+   </p>
+   <div>
+       <input bind-value="fname" >
+   </div>
+   <div>
+       <button  class="buttonColor buttonSize" [ngClass]='addClass()'>Login</button>
+   </div> -->
+    <!-- <div> -->
+    <!-- <button class="btn btn-success" (click)="onClick()">Click</button> -->
+    <!-- <p (mouseenter)="onClick()">Hi</p> -->
+    <!-- </div> -->
+    <!-- <app-home></app-home> -->
+    <!-- <app-department></app-department> -->
+    <!-- <app-gellery></app-gellery> -->
+    <!-- <app-teacher></app-teacher>
+    <table>
+        <tr *ngFor="let emp of Employers; trackBy:trackbyId">
+        <td>{{emp.name}}</td>
+        </tr>
+    </table>
+    <button (click)="addEmployers()">Add</button> -->
+    <!-- <app-unit></app-unit> -->
+    <!-- <app-template-forms></app-template-forms> -->
+    <!-- <app-reactive-forms></app-reactive-forms>
+    {{mycol}}
+    <p appHover style="display:inline">this is the element</p>
+    <input myDir type="button" value="click">
+    <p *ngif>this is view</p> -->
+    
+    <!-- <ul class="nav justify-content-center">
+        <li routerLinkActive="active" class="nav-item">
+            <a  class="nav-link" routerLink='/home' >Home</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a  class="nav-link" routerLink='/contact' >Contact</a> </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a  class="nav-link" routerLink='/gellery'>Gellery</a> </li>
+        <li routerLinkActive="active"  class="nav-item">
+            <li routerLinkActive="active"  class="nav-item">
+            <a class="nav-link" routerLink='/reactive'>Reactive</a> </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link"  routerLink='/unit'>Units</a> </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a  class="nav-link" routerLink='/teacher' >Teachers</a> </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a  class="nav-link" routerLink='/template'>template</a> </li>
+            <li routerLinkActive="active" class="nav-item">
+                    <a  class="nav-link" routerLink='/apicall'>api</a> </li>
+                 
+    </ul>
+    <router-outlet></router-outlet> -->
+</div>
+<div class="col-6">
+        ID: <input class="form-control" #userId><br>
+    body: <input class="form-control" #body><br>
+    Title: <input class="form-control" #title><br>
+    <button class="btn btn-primary" (click)="adddata(userId, body, title)" >Add</button>
+</div><br>
+<div class="table">
+    <table>
+      <th>userId</th><th>body</th><th>title</th><th>Action</th>
+        <tr *ngFor='let x of commingData'>
+            <td>{{x.id}}</td>
+            <td>{{x.body}}</td>
+            <td>{{x.title}}</td>
+            <td><button class="btn btn-danger" (click)="deleteRecord(x.id)">Delete</button>
+                <button class="btn btn-danger" (click)="updateRecord(x)">update</button>
+            </td>
+        </tr>
+    </table>
+</div>

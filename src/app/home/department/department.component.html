@@ -1,0 +1,30 @@
+<div>
+    <table border="1">
+        <th>Name</th><th>Age</th>
+        <tr *ngFor="let x of message">
+            <td>{{x.name}}</td>
+            <td>{{x.age}}</td>
+        </tr>
+    </table>
+    
+    <button class="btn btn-primary" (click)="Getmessage()">Bro</button><br>
+    <button class="btn btn-danger" (click)="funValue()"> Alert</button>
+    <br>
+    <button (click)="sendEmploeeDetails()"></button>
+
+    <table border="1">
+    <th>Name</th> <th>Age</th> <th *ngIf="hiddenValue">Address</th> <th *ngIf="hiddenValue">Country</th>
+    <tr *ngFor="let emp of employees">
+        <td>{{emp.name}}</td>
+        <td>{{emp.age}}</td>
+        <td *ngIf="hiddenValue">{{emp.address}}</td>
+        <td *ngIf="hiddenValue">{{emp.country}}</td>
+        
+    </tr>
+    </table>
+    <button class="btn btn-info" [hidden]="hiddenValue" (click)="ShowDetailed()">Show Details</button>
+    <button class="btn btn-info" [hidden]="!hiddenValue" (click)="ShowDetailed()">Hide Details</button>
+
+
+    
+</div>

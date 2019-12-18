@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+.buttonColor{
+    color: red;
+}
+
+.buttonSize{
+    background-color: royalblue;
+    font-weight: 40px;
+
+}

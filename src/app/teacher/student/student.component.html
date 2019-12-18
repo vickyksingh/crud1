@@ -1,0 +1,11 @@
+<ul *ngFor="let s of getvalue">
+    <li >
+        {{s.name}}
+    </li>
+    <li>
+        {{s.Subject}}
+    </li>
+</ul>
+<div>
+    <button class="btn btn-primary" (click)="getStudents()">Trigger</button>
+</div>
